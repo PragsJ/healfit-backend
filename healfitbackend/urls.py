@@ -20,8 +20,10 @@ from api import views
 
 router = routers.DefaultRouter()
 router.register(r'consultants', views.ConsultantViewSet)
-router.register(r'users', views.UserViewSet)
 router.register(r'userprofile', views.UserProfileViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'blogs', views.BlogViewSet)
+router.register(r'events', views.EventViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

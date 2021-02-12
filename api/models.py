@@ -18,3 +18,17 @@ class UserProfile(models.Model):
     lastperiod = models.DateField()
 
 
+class Blog(models.Model):
+    publishdate = models.DateField()
+    title = models.CharField(max_length=256)
+    link = models.URLField()
+    author = models.CharField(max_length=32)
+    tags = models.CharField(max_length=256)
+
+class Event(models.Model):
+    Subject = models.CharField(max_length=32)
+    StartTime = models.DateTimeField()
+    EndTime = models.DateTimeField()
+    IsAllDay = models.BooleanField()
+
+
